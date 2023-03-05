@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blk {
+    position: relative;
+}
+.celinder {
+    position: absolute;
+    top: -25%;
+    left: -15px;
+    cursor: pointer;
+}
+
+.active {
+    top: -200%;
+    transition: top 1s ease-in-out;
+}
+
+.count {
+    user-select: none;
+    opacity: 1;
+    z-index: 2;
+    transform: scale(0);
+    position: absolute;
+    font-size: 1000px;
+    transition: all 2s ease-in-out;
+}
+.fly {
+    opacity: 0;
+    transform: scale(3);
+    transition: none;
+}
